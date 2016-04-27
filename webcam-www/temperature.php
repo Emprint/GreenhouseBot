@@ -17,10 +17,6 @@ CREATE TABLE IF NOT EXISTS `rasp-temp` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 */
 
-//mail('julien@emprint.fr', 'Debug', 'POST: '.print_r($_POST, true)."\n\nGET: ".print_r($_GET, true)."\n\nFILES: ".print_r($_FILES, true));
-
-//$_POST = $_GET;
-
 if($_POST['token'] == $token && $_POST['data']) {
 	$date = date('Y-m-d H:i:s');
 	$temps = [];
